@@ -19,7 +19,7 @@ for folder in folders
       "git-tree-sha1" => Tar.tree_hash(IOBuffer(inflate_gzip(outpath))),
       "lazy" => true,
       "download" => [Dict(
-      "url" => "https://github.com/Koulb/QuantumEspressoDatasets/artifacts/$(folder).tar.gz",
+      "url" => "https://github.com/Koulb/QuantumEspressoDatasets/raw/main/artifacts/$(folder).tar.gz",
       "sha256" => bytes2hex(open(sha256, outpath)))]
     )
 end
